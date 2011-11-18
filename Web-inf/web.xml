@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    Version="2.4">
+    <servlet>
+        <servlet-name>CurrencyConverter</servlet-name>
+        <servlet-class>CurrencyConverter</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CurrencyConverter</servlet-name>
+        <url-pattern>/CurrencyConverter</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>SourceCode</servlet-name>
+        <servlet-class>SCServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SourceCode</servlet-name>
+        <url-pattern>/project2.rar</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>InfoServlet</servlet-name>
+        <servlet-class>InfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InfoServlet</servlet-name>
+        <url-pattern>/infoServlet</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+        <param-name>redirectLink</param-name>
+        <param-value>http://anpapag.wordpress.com/2011/11/15/project-2/</param-value>
+    </context-param>
+    
+    <listener>
+        <listener-class>ISCL</listener-class>
+    </listener>
+	
+ 
+</web-app>
